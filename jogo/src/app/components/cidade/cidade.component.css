@@ -1,0 +1,26 @@
+/*----------------------fundo----------------------------*/
+.fundo
+{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: url(src/assets/imagens/cidade.jpg) no-repeat;
+  background-size:100%;
+}
+
+/*------------------------arena-------------------*/
+.arena
+{
+  position:absolute;
+  left: 75%;
+  top: 15%;
+  cursor: pointer;
+  transition: all 0.7s ease;
+
+}
+.arena:hover
+{
+    transform:scale(1.2);
+}

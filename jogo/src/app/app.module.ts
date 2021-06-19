@@ -7,11 +7,13 @@ import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RegistoComponent } from './components/registo/registo.component';
 import { FormsModule } from '@angular/forms';
+import { CidadeComponent } from './components/cidade/cidade.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegistoComponent,
+    CidadeComponent,
 
   ],
   imports: [

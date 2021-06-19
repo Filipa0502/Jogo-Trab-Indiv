@@ -6,7 +6,7 @@
         </span>
 
         <div class="input">
-          <input class="input1" type="text" name="nome" placeholder="Nome">
+          <input class="input1" type="text" name="nome" placeholder="Nome" #user>
           <span class="focus-input1"></span>
           <span class="icon">
             <i class="fa fa-user" aria-hidden="true"></i>
@@ -14,7 +14,7 @@
         </div>
 
         <div class="input">
-          <input class="input1" type="password" name="pass" placeholder="Password">
+          <input class="input1" type="password" name="pass" placeholder="Password" #pass>
           <span class="focus-input1"></span>
           <span class="icon">
             <i class="fa fa-lock" aria-hidden="true"></i>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="login-Botao">
-          <button class="btn">
+          <button class="btn" (click)="login(user.value, pass.value, user, pass)">
             Login
           </button>
         </div>
