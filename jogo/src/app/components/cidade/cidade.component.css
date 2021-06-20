@@ -9,7 +9,11 @@
   background: url(src/assets/imagens/cidade.jpg) no-repeat;
   background-size:100%;
 }
-
+img
+{
+  width: 200px;
+  height: auto;
+}
 /*------------------------arena-------------------*/
 .arena
 {
@@ -23,4 +27,32 @@
 .arena:hover
 {
     transform:scale(1.2);
+}
+
+/*------------------------loja-------------------------*/
+.loja
+{
+  position:absolute;
+  left: 10%;
+  top: 10%;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+.loja:hover
+{
+  transform:scale(1.2);
+}
+
+/*----------------------treino-----------------------------*/
+.treino
+{
+  position:absolute;
+  left: 40%;
+  top: 60%;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+.treino:hover
+{
+  transform:scale(1.2);
 }
