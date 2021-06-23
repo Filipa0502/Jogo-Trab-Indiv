@@ -11,6 +11,7 @@ import { CidadeComponent } from './components/cidade/cidade.component';
 import { ArenaComponent } from './components/arena/arena.component';
 import { LojaComponent } from './components/loja/loja.component';
 import { TreinarComponent } from './components/treinar/treinar.component';
+import { ErroComponent } from './components/erro/erro.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { TreinarComponent } from './components/treinar/treinar.component';
     ArenaComponent,
     LojaComponent,
     TreinarComponent,
+    ErroComponent,
 
   ],
   imports: [

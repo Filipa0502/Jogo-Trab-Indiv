@@ -14,6 +14,7 @@ export class RegistarService {
  linkCriarChart = "http://moreiramoises.pt/server/apis/createChart.php";
  linkUpdateChart = "http://moreiramoises.pt/server/apis/updateChart.php";
  linkDeleteChart = "http://moreiramoises.pt/server/apis/deleteChart.php"
+ linkRandomChar: string = 'http://moreiramoises.pt/server/apis/get/getRandomChar.php?';
 
   /*------------------criar conta---------------------*/
   registar(nome:string, pass:string)
@@ -73,6 +74,12 @@ export class RegistarService {
     dataToSend.append("idpersonagem", idpersonagem);
 
     return this.http.post(this.linkDeleteChart, dataToSend);
+  }
+
+  /*---------------------random char-------------------------*/
+  randomChar()
+  {
+    return this.http.get(this.linkRandomChar);
   }
 }
 

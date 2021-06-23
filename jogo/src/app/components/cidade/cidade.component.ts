@@ -1,3 +1,4 @@
+import { PlayerService } from './../../services/player.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CidadeComponent implements OnInit {
 
-  constructor(private redirecionar: Router) { }
+  constructor(private redirecionar: Router, private player: PlayerService) { }
 
   ngOnInit(): void {
   }
@@ -29,4 +30,7 @@ export class CidadeComponent implements OnInit {
   {
     this.redirecionar.navigate(['/treinar'])
   }
+
+
+
 }

@@ -1,3 +1,4 @@
+import { ErroComponent } from './components/erro/erro.component';
 import { TreinarComponent } from './components/treinar/treinar.component';
 import { CidadeComponent } from './components/cidade/cidade.component';
 import { NgModule } from '@angular/core';
@@ -15,6 +16,8 @@ const routes: Routes = [
   {path:"arena", component:ArenaComponent},
   {path:"loja", component:LojaComponent},
   {path:"treinar", component:TreinarComponent},
+  {path:"notFound", component:ErroComponent},
+  {path:"**", redirectTo:"notFound"}
 ];
 
 @NgModule({

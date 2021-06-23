@@ -1,3 +1,6 @@
+import { PlayerService } from './../../services/player.service';
+import { JogadoresService } from './../../services/jogadores.service';
+import { RegistarService } from 'src/app/services/registar.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArenaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private registarService: RegistarService, private jogadoresService: JogadoresService, private player: PlayerService) { }
 
   ngOnInit(): void {
   }
+
+
+  /*------------------------------random jogador-----------------------*/
+  
 
 }
