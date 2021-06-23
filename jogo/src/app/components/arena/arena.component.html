@@ -1,5 +1,18 @@
 <div class="fundo">
-  <img src="assets/imagens/personagem1-removebg-preview.png" class="personagem1">
-  <img src="assets/imagens/personagem-removebg-preview.png" class="personagem2">
+  <div>
+    <img src="assets/imagens/personagem1-removebg-preview.png" class="personagem1" #personagem1>
+  </div>
+  <div>
+    <img src="assets/imagens/personagem-removebg-preview.png" class="personagem2" #personagem2>
+  </div>
+  <div classe="voltarBtn" >
+    <button (click)="voltarCidade()">Voltar</button>
+  </div>
 
+  <div class="barraVidaP1">
+    <div>Player</div>
+  </div>
+  <div class="barraVidaP2">
+    <div></div>
+  </div>
 </div>

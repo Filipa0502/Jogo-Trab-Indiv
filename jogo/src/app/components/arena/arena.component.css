@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
   padding: 15px;
   background: url(src/assets/imagens/image.jpg) no-repeat;
   background-size:100% 100%;
@@ -26,4 +26,39 @@
   left: 65%;
   width: 350px;
   height: auto;
+}
+
+
+/*--------------------btn voltar-----------------*/
+.voltarBtn
+{
+  position:absolute;
+  width: 100px;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: rgb(128, 128, 128);
+
+}
+
+/*-------------------barra vida Personagem 1----------------------*/
+.barraVidaP1
+{
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  border:2px solid rgb(0, 0, 0);
+  background-color: rgb(0, 255, 42);
+  left: 10%;
+}
+/*-------------------barra vida Personagem 2----------------------*/
+.barraVidaP2
+{
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  border:2px solid rgb(0, 0, 0);
+  background-color: rgb(0, 255, 42);
+  left: 10%;
+  top:10%
 }

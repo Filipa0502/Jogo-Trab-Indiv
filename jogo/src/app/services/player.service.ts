@@ -9,7 +9,7 @@ export class PlayerService {
 
   player : any =
   {
-    name: 'Ersa',
+    name: 'Erza',
     atk: ' ',
     isMonster: ' ',
     int: ' ',

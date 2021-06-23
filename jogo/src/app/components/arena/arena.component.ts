@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { PlayerService } from './../../services/player.service';
 import { JogadoresService } from './../../services/jogadores.service';
 import { RegistarService } from 'src/app/services/registar.service';
@@ -10,13 +11,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArenaComponent implements OnInit {
 
-  constructor(private registarService: RegistarService, private jogadoresService: JogadoresService, private player: PlayerService) { }
+  constructor(private redirecionar:Router,  private registarService: RegistarService, private jogadoresService: JogadoresService, private player: PlayerService) {}
 
   ngOnInit(): void {
   }
 
+  personagem1: any;
+  personagem2: any;
+
+  voltarCidade()
+  {
+    this.redirecionar.navigate(['/cidade']);
+  }
 
   /*------------------------------random jogador-----------------------*/
-  
 
+  /*getRandomJogador()
+  {
+    this.registarService.randomChar().subscribe((data) =>
+      {
+        this.player.player.name=data.nome;
+      })
+
+  }*/
+
+  /*----------------------------batalha-------------------------*/
+  //batalha(persongem1: HTMLElement, personagem2: HTMLElement)
+  //{
+    /*-------------atque da 1º personagem-------------*/
+
+    /*--------------ataque da 2º personagem------------*/
+  //}
 }
