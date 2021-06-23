@@ -1,4 +1,5 @@
 import { HttpClient } from '@angular/common/http';
+import { DomElementSchemaRegistry } from '@angular/compiler';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -12,7 +13,7 @@ export class RegistarService {
  linkLogin = "http://moreiramoises.pt/server/apis/login.php";
  linkCriarChart = "http://moreiramoises.pt/server/apis/createChart.php";
  linkUpdateChart = "http://moreiramoises.pt/server/apis/updateChart.php";
-
+ linkDeleteChart = "http://moreiramoises.pt/server/apis/deleteChart.php"
 
   /*------------------criar conta---------------------*/
   registar(nome:string, pass:string)
@@ -63,4 +64,16 @@ export class RegistarService {
 
     return this.http.post(this.linkUpdateChart, dataToSend);
   }
+  /*-------------------------delete char----------------------*/
+  deleteChart(username: string, password: string, idpersonagem: string)
+  {
+    let dataToSend : FormData = new FormData();
+    dataToSend.append("username", username);
+    dataToSend.append("password", password);
+    dataToSend.append("idpersonagem", idpersonagem);
+
+    return this.http.post(this.linkDeleteChart, dataToSend);
+  }
 }
+
+

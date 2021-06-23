@@ -1,0 +1,11 @@
+.fundo
+{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background: url(src/assets/imagens/ginasioInterior.jpg) no-repeat;
+  background-size:100% 100%;
+
+}
