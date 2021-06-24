@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LojaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private redirecionar: Router) { }
 
   ngOnInit(): void {
   }
+  voltarCidade()
+  {
+    this.redirecionar.navigate(['/cidade']);
+  }
 
+  equipEspada(espada: HTMLElement)
+  {
+
+  }
 }

@@ -31,6 +31,10 @@ export class ArenaComponent implements OnInit {
     this.registarService.randomChar().subscribe((data) =>
       {
         this.player.player.name=data.nome;
+        this.enemyService.player.id = data.ID;
+        this.enemyService.player.atk = data.Atk;
+        this.enemyService.player.isMonset = data.IsMonset;
+        this.enemyService.player.int = data.Int;
       })
 
   }*/
@@ -38,8 +42,8 @@ export class ArenaComponent implements OnInit {
   /*----------------------------batalha-------------------------*/
   //batalha(persongem1: HTMLElement, personagem2: HTMLElement)
   //{
-    /*-------------atque da 1º personagem-------------*/
+        /*-------------atque da 1º personagem-------------*/
 
-    /*--------------ataque da 2º personagem------------*/
+        /*--------------ataque da 2º personagem------------*/
   //}
 }

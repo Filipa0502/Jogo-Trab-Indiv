@@ -28,9 +28,14 @@ export class CidadeComponent implements OnInit {
   /*--------------------entrar para treinar------------------------*/
   entrarTreino()
   {
-    this.redirecionar.navigate(['/treinar'])
+    this.redirecionar.navigate(['/treinar']);
   }
 
+  /*------------------sair------------------------------*/
+  sair()
+  {
+    this.redirecionar.navigate(['/login']);
+  }
 
 
 }

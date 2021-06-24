@@ -2,12 +2,18 @@
 {
   width: 100% ;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
   padding: 15px;
   background: url(src/assets/imagens/lojaInterior.jpeg) no-repeat;
   background-size:100% 100%;
 
+}
+
+.voltar
+{
+  background-color: rgb(107, 107, 107);
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
 }
 
 .espada

@@ -18,10 +18,7 @@ export class JogadoresService {
     atk: "0",
     isMonset: "",
     int: "0",
-    lp: "0",
-    img: "",
-    idPlayer: "",
-    weapon: "punch"
-  };
+    idPlayer: ""
+    };
 
 }
