@@ -1,0 +1,41 @@
+
+
+  <div class="container-fundo">
+    <form class="form" method="POST">
+       <span class="titulo">
+         Criar Arma
+       </span>
+
+       <div class="input">
+         <input class="input1" type="text" name="nome" placeholder="Nome">
+         <span class="focus-input1"></span>
+       </div>
+
+       <div class="input">
+         <input class="input1" type="text" name="Atk" placeholder="atk">
+         <span class="focus-input1"></span>
+       </div>
+       <div class="input">
+        <input class="input1" type="text" name="durabilidade" placeholder="durabilidade">
+        <span class="focus-input1"></span>
+      </div>
+      <div class="input">
+        <input class="input1" type="text" name="tipoArma" placeholder="tipoArma">
+        <span class="focus-input1"></span>
+      </div>
+      <div class="input">
+        <input class="input1" type="text" name="vida" placeholder="vida">
+        <span class="focus-input1"></span>
+      </div>
+       <div class="login-Botao">
+         <button class="btn" (click)="criarArma()">
+           Criar Arma
+         </button>
+       </div>
+       <div class="login-Botao">
+        <button class="btn" [routerLink]="['/cidade']" routerLinkActive="active">
+          Voltar
+        </button>
+      </div>
+     </form>
+ </div>

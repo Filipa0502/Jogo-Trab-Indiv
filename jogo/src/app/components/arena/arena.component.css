@@ -41,24 +41,3 @@
 
 }
 
-/*-------------------barra vida Personagem 1----------------------*/
-.barraVidaP1
-{
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  border:2px solid rgb(0, 0, 0);
-  background-color: rgb(0, 255, 42);
-  left: 10%;
-}
-/*-------------------barra vida Personagem 2----------------------*/
-.barraVidaP2
-{
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  border:2px solid rgb(0, 0, 0);
-  background-color: rgb(0, 255, 42);
-  left: 10%;
-  top:10%
-}

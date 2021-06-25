@@ -12,6 +12,8 @@ import { ArenaComponent } from './components/arena/arena.component';
 import { LojaComponent } from './components/loja/loja.component';
 import { TreinarComponent } from './components/treinar/treinar.component';
 import { ErroComponent } from './components/erro/erro.component';
+import { CriarArmaComponent } from './components/criar-arma/criar-arma.component';
+import { CriarPersonagemComponent } from './components/criar-personagem/criar-personagem.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,8 @@ import { ErroComponent } from './components/erro/erro.component';
     LojaComponent,
     TreinarComponent,
     ErroComponent,
+    CriarArmaComponent,
+    CriarPersonagemComponent,
 
   ],
   imports: [

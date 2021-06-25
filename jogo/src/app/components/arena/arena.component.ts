@@ -1,6 +1,7 @@
+import { Batalha } from './../../class/batalha';
+import { Arma } from './../../class/arma';
+import { Personagem } from './../../class/personagem';
 import { Router } from '@angular/router';
-import { PlayerService } from './../../services/player.service';
-import { JogadoresService } from './../../services/jogadores.service';
 import { RegistarService } from 'src/app/services/registar.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -11,39 +12,76 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArenaComponent implements OnInit {
 
-  constructor(private redirecionar:Router,  private registarService: RegistarService, private jogadoresService: JogadoresService, private player: PlayerService) {}
-
-  ngOnInit(): void {
-  }
-
-  personagem1: any;
-  personagem2: any;
+  constructor(private redirecionar:Router,  private registarService: RegistarService) {}
 
   voltarCidade()
   {
     this.redirecionar.navigate(['/cidade']);
   }
 
-  /*------------------------------random jogador-----------------------*/
+  ngOnInit(): void {
+    /*this.getInimigo();
+    this.getArma("me");
+    this.getArma("him");*/
+  }
 
-  /*getRandomJogador()
-  {
-    this.registarService.randomChar().subscribe((data) =>
-      {
-        this.player.player.name=data.nome;
-        this.enemyService.player.id = data.ID;
-        this.enemyService.player.atk = data.Atk;
-        this.enemyService.player.isMonset = data.IsMonset;
-        this.enemyService.player.int = data.Int;
-      })
 
-  }*/
+/*
+meuJogador : Personagem;
+minhaArma : Arma;
 
-  /*----------------------------batalha-------------------------*/
-  //batalha(persongem1: HTMLElement, personagem2: HTMLElement)
-  //{
-        /*-------------atque da 1º personagem-------------*/
+meuInimigo : Personagem;
+hisWeapon : Arma;
 
-        /*--------------ataque da 2º personagem------------*/
-  //}
+batalha : Batalha;
+
+getInimigo()
+{
+ let result;
+  this.registarService.getInimigo().subscribe(data =>{result = data;console.log(data);this.meuInimigo = new Personagem(result.data.Nome,result.data.Atk,result.data.Int,result.data.Vida);console.log(this.meuInimigo)});
+}
+
+getArma(how: string)
+{
+let result;
+let result2;
+
+if(how == "me")
+{
+    this.registarService.getArma().subscribe(data=>{result = data;console.log(data);this.minhaArma = new Arma(result.data.nome,result.data.Atk,result.data.Durabilidade,result.data.TipoDeArma);console.log(this.minhaArma)});
+}
+
+if(how=="him")
+{
+  this.registarService.getArma().subscribe(data=>{result2 = data;console.log(data);this.hisWeapon= new Arma(result2.data.nome,result2.data.Atk,result2.data.Durabilidade,result2.data.TipoDeArma);console.log(this.hisWeapon);this.batalha = new Batalha(this.meuJogador,this.meuInimigo,this.minhaArma,this.hisWeapon);});
+}
+
+}
+
+
+BattleStarts()
+{
+
+let resposta = this.batalha.atacar();
+
+if(resposta=="continua")
+{
+   let rep= this.batalha.atacar("Outra vez");
+   if(rep=="p-win")
+   {
+      alert(`${this.meuJogador.nome} Ganhou`);
+   } else {
+    alert(`${this.meuInimigo.nome} Perdeu`);
+   }
+}
+else if(resposta=="p-win")
+{
+  alert(`${this.meuJogador.nome} Ganhou`);
+}else {
+  alert(`${this.meuInimigo.nome} Perdeu`);
+ }
+
+}
+*/
+
 }

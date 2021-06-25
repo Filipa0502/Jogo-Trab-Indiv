@@ -1,3 +1,5 @@
+import { CriarPersonagemComponent } from './components/criar-personagem/criar-personagem.component';
+import { CriarArmaComponent } from './components/criar-arma/criar-arma.component';
 import { ErroComponent } from './components/erro/erro.component';
 import { TreinarComponent } from './components/treinar/treinar.component';
 import { CidadeComponent } from './components/cidade/cidade.component';
@@ -17,6 +19,8 @@ const routes: Routes = [
   {path:"loja", component:LojaComponent},
   {path:"treinar", component:TreinarComponent},
   {path:"notFound", component:ErroComponent},
+  {path:"criarArma", component:CriarArmaComponent},
+  {path:"criarPersonagem", component:CriarPersonagemComponent},
   {path:"**", redirectTo:"notFound"}
 ];
 
